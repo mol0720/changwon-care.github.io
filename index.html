@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>창원종합복지센터 | 국민건강보험공단 지정 노인장기요양기관</title>
+  
+  <!-- SEO & Social Meta Tags (네이버, 카카오톡, 구글 검색 최적화) -->
+  <meta name="title" content="창원종합복지센터 | 국민건강보험공단 지정 노인장기요양기관">
+  <meta name="description" content="15년 노하우, 국민건강보험공단 평가 A등급 최우수 방문요양기관 창원종합복지센터입니다. 마산·창원 어르신 1:1 맞춤 방문요양, 치매·인지돌봄, 가족요양 및 등급신청 무료대행">
+  <meta name="keywords" content="창원종합복지센터, 창원방문요양, 마산방문요양, 노인장기요양보험, 가족요양, 장기요양등급신청, 마산회원구방문요양">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="창원종합복지센터 | 15년의 한결같은 정성, 든든한 어르신 동행">
+  <meta property="og:description" content="국민건강보험공단 평가 최우수 A등급, 창원·마산 전 지역 1:1 맞춤 방문요양 & 가족요양 상담">
+  <meta property="og:image" content="images/hero-banner.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Web Fonts: Pretendard & Noto Sans KR -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&family=Pretendard:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#1A365D',
+              navyHover: '#122540',
+              peach: '#FFF6EE',
+              beige: '#FDFBF7',
+              warmCard: '#FAF3EA',
+              accent: '#E06A3B',
+              accentHover: '#CA572A',
+              green: '#2E7D32',
+              softGreen: '#EBF5EB',
+              textMain: '#2D3748',
+              textSub: '#5A6A80'
+            }
+          },
+          fontFamily: {
+            sans: ['Pretendard', 'Noto Sans KR', 'sans-serif']
+          },
+          boxShadow: {
+            'card': '0 8px 30px -4px rgba(26, 54, 93, 0.08)',
+            'elevated': '0 16px 36px -8px rgba(224, 106, 59, 0.28)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #FDFBF7;
+      color: #2D3748;
+      word-break: keep-all;
+    }
+    .hero-glow {
+      background: radial-gradient(circle at 50% 20%, rgba(255, 237, 219, 0.8) 0%, rgba(253, 251, 247, 0) 70%);
+    }
+    .modal-active {
+      display: flex !important;
+      animation: fadeIn 0.25s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.97); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .img-zoom {
+      transition: transform 0.35s ease;
+    }
+    .img-zoom:hover {
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body class="font-sans antialiased text-brand-textMain bg-brand-beige selection:bg-brand-accent selection:text-white">
+
+  <!-- Top Emergency Notice Bar -->
+  <div class="bg-brand-navy text-white text-xs md:text-sm py-2 px-4 border-b border-slate-700">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="bg-brand-green text-white text-[11px] font-extrabold px-2.5 py-0.5 rounded-full shadow-sm">공단평가 A등급</span>
+        <span>2011년부터 15년 노하우 · 국민건강보험공단 지정 마산·창원 전문 노인장기요양기관</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <a href="tel:0552994305" class="hover:underline flex items-center gap-1.5 font-bold text-amber-300">
+          <i class="fa-solid fa-phone"></i> 055-299-4305
+        </a>
+        <span class="text-slate-500">|</span>
+        <span class="text-slate-300">365일 무료 등급신청 및 방문요양 상담</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- GNB Header with Custom Brand Logo -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-orange-100 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo: Uses images/logo.png with clean fallback -->
+      <a href="#" class="flex items-center gap-3 group" title="창원종합복지센터 공식 홈페이지">
+        <img 
+          src="images/logo.png" 
+          alt="창원종합복지센터 공식 로고" 
+          class="h-14 md:h-16 w-auto object-contain transition-transform group-hover:scale-105"
+          onerror="this.onerror=null; this.src='https://placehold.co/400x120/1A365D/FFFFFF?text=%EC%B0%BD%EC%9B%90%EC%A2%85%ED%95%A9%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0';"
+        />
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-8 font-semibold text-slate-700 text-[15px]">
+        <a href="#about" class="hover:text-brand-accent transition-colors">센터소개</a>
+        <a href="#services" class="hover:text-brand-accent transition-colors">4대 맞춤돌봄</a>
+        <a href="#calculator" class="hover:text-brand-accent transition-colors">본인부담금 계산기</a>
+        <a href="#process" class="hover:text-brand-accent transition-colors">등급신청 절차</a>
+        <a href="#faq" class="hover:text-brand-accent transition-colors">자주 묻는 질문</a>
+        <a href="#contact" class="hover:text-brand-accent transition-colors">오시는 길</a>
+      </nav>
+
+      <!-- Desktop Action Button -->
+      <div class="hidden sm:flex items-center gap-3">
+        <button onclick="openConsultModal()" class="px-5 py-2.5 bg-brand-accent hover:bg-brand-accentHover text-white font-bold rounded-full shadow-md hover:shadow-elevated transition-all duration-200 flex items-center gap-2 text-sm">
+          <i class="fa-solid fa-file-signature"></i>
+          <span>무료 상담 신청</span>
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileMenuBtn" class="lg:hidden text-slate-700 p-2 focus:outline-none" aria-label="메뉴 열기">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-orange-100 px-6 py-5 shadow-lg">
+      <div class="flex flex-col gap-3 font-medium text-slate-800">
+        <a href="#about" class="py-2.5 hover:text-brand-accent border-b border-slate-100" onclick="toggleMobileMenu()">센터소개</a>
+        <a href="#services" class="py-2.5 hover:text-brand-accent border-b border-slate-100" onclick="toggleMobileMenu()">4대 맞춤돌봄</a>
+        <a href="#calculator" class="py-2.5 hover:text-brand-accent border-b border-slate-100" onclick="toggleMobileMenu()">본인부담금 계산기</a>
+        <a href="#process" class="py-2.5 hover:text-brand-accent border-b border-slate-100" onclick="toggleMobileMenu()">등급신청 절차</a>
+        <a href="#faq" class="py-2.5 hover:text-brand-accent border-b border-slate-100" onclick="toggleMobileMenu()">자주 묻는 질문</a>
+        <a href="#contact" class="py-2.5 hover:text-brand-accent" onclick="toggleMobileMenu()">오시는 길 & 연락처</a>
+        <div class="pt-3 flex flex-col gap-2">
+          <a href="tel:0552994305" class="w-full text-center py-3 bg-brand-navy text-white rounded-xl font-bold flex items-center justify-center gap-2 text-sm">
+            <i class="fa-solid fa-phone"></i> 055-299-4305 전화상담
+          </a>
+          <button onclick="openConsultModal(); toggleMobileMenu();" class="w-full py-3 bg-brand-accent text-white rounded-xl font-bold text-sm">
+            온라인 간편 상담 예약
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Storybook Illustration -->
+  <section class="relative overflow-hidden pt-8 pb-16 md:pt-14 md:pb-24 hero-glow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+        
+        <!-- Left Hero Copy -->
+        <div class="lg:col-span-6 text-center lg:text-left space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-100 text-brand-accent font-bold text-xs md:text-sm border border-orange-200 shadow-sm">
+            <i class="fa-solid fa-heart"></i>
+            <span>어르신의 행복한 오늘을 만듭니다</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-navy leading-tight tracking-tight">
+            15년의 한결같은 정성,<br>
+            어르신의 내일을 밝히는<br>
+            <span class="text-brand-accent underline decoration-orange-300 decoration-wavy underline-offset-8">든든한 동행</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-brand-textSub leading-relaxed max-w-xl mx-auto lg:mx-0">
+            가장 익숙하고 편안한 우리 집에서, 가족의 마음으로 모십니다.<br class="hidden sm:inline">
+            2011년부터 축적된 15년 방문요양 노하우와 국민건강보험공단 최우수(A등급) 평가 시스템으로 어르신의 존엄한 삶과 가족의 평안을 지켜드립니다.
+          </p>
+
+          <!-- Quick Action CTA Buttons -->
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <button onclick="openConsultModal()" class="w-full sm:w-auto px-8 py-4 bg-brand-accent hover:bg-brand-accentHover text-white font-bold rounded-2xl shadow-elevated transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-3 text-base">
+              <i class="fa-regular fa-comment-dots text-lg"></i>
+              <span>장기요양 무료 상담받기</span>
+            </button>
+            <a href="tel:0552994305" class="w-full sm:w-auto px-7 py-4 bg-white hover:bg-orange-50 text-brand-navy border border-orange-200 font-bold rounded-2xl shadow-sm transition-all flex items-center justify-center gap-2 text-base">
+              <i class="fa-solid fa-phone-volume text-brand-accent"></i>
+              <span>055-299-4305</span>
+            </a>
+          </div>
+
+          <!-- Feature Bullet Badges -->
+          <div class="pt-4 border-t border-orange-200/70 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs sm:text-sm text-slate-600 font-medium">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-brand-green"></i>
+              <span>등급 신청 전액 무료 대행</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-brand-green"></i>
+              <span>50대 베테랑 전문 요양보호사</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-brand-green"></i>
+              <span>전담 사회복지사 1:1 정기방문</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Banner: Warm Storybook Artwork Frame -->
+        <div class="lg:col-span-6 relative">
+          <div class="relative mx-auto max-w-lg lg:max-w-none">
+            <!-- Decorative Glow Background Blobs -->
+            <div class="absolute -top-6 -right-6 w-72 h-72 bg-orange-200/50 rounded-full blur-3xl -z-10"></div>
+            <div class="absolute -bottom-8 -left-8 w-60 h-60 bg-amber-100/70 rounded-full blur-2xl -z-10"></div>
+
+            <!-- Artwork Frame Displaying images/hero-banner.png -->
+            <div class="relative bg-white p-3 sm:p-4 rounded-3xl shadow-card border-4 border-white overflow-hidden group">
+              <img 
+                src="images/hero-banner.png" 
+                alt="창원종합복지센터 따뜻한 어르신 돌봄 일러스트" 
+                class="w-full h-auto rounded-2xl object-cover img-zoom shadow-sm"
+                onerror="this.onerror=null; this.src='https://placehold.co/800x450/FFEEDD/1A365D?text=%EC%96%B4%EB%A5%B4%EC%8B%A0+%EB%A7%9E%EC%B6%A4%EB%8F%8C%EB%B4%84+%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8';"
+              />
+              
+              <!-- Floating Quality Assurance Badge -->
+              <div class="absolute bottom-6 left-6 sm:left-8 bg-white/95 backdrop-blur-md py-2.5 px-4 rounded-2xl shadow-lg border border-orange-100 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-brand-peach flex items-center justify-center text-brand-accent font-bold">
+                  <i class="fa-solid fa-award text-lg"></i>
+                </div>
+                <div>
+                  <p class="text-xs text-slate-500 font-medium">국민건강보험공단</p>
+                  <p class="text-sm font-bold text-brand-navy">평가 최우수 A등급 기관</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4-Stat Trust Bar -->
+  <section class="bg-brand-navy text-white py-10 relative z-10 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-slate-700/70">
+        <div class="pt-4 md:pt-0">
+          <p class="text-3xl sm:text-4xl font-extrabold text-amber-300">15<span class="text-xl">년</span></p>
+          <p class="text-sm text-slate-300 mt-1 font-medium">2011년 설립 이래 15년 노하우</p>
+        </div>
+        <div class="pt-4 md:pt-0">
+          <p class="text-3xl sm:text-4xl font-extrabold text-white">최우수 <span class="text-amber-300">A</span></p>
+          <p class="text-sm text-slate-300 mt-1 font-medium">국민건강보험공단 기관 평가</p>
+        </div>
+        <div class="pt-4 md:pt-0">
+          <p class="text-3xl sm:text-4xl font-extrabold text-amber-300">1:1</p>
+          <p class="text-sm text-slate-300 mt-1 font-medium">맞춤형 개인 케어플랜 수립</p>
+        </div>
+        <div class="pt-4 md:pt-0">
+          <p class="text-3xl sm:text-4xl font-extrabold text-white">0<span class="text-xl">원</span></p>
+          <p class="text-sm text-slate-300 mt-1 font-medium">장기요양 등급신청 무료 대행</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+        <span class="text-brand-accent font-bold text-sm tracking-wider uppercase">ABOUT US</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy">
+          "부모님 걱정에 밤잠 설치는<br class="sm:hidden"> 가족의 마음에 답합니다"
+        </h2>
+        <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full"></div>
+        <p class="text-base sm:text-lg text-brand-textSub leading-relaxed">
+          창원종합복지센터는 2011년 설립 이후 15년 동안 오직 어르신의 존엄한 삶과 가족의 평안만을 생각하며 걸어왔습니다.
+          단순한 가사 도움이 아닌, 내 부모님을 돌보듯 따뜻한 온기와 신뢰할 수 있는 전문성을 바탕으로 지역사회가 가장 신뢰하는 방문요양 기관으로 자리매김하고 있습니다.
+        </p>
+      </div>
+
+      <!-- 4 Core Values Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-brand-beige p-7 rounded-3xl border border-orange-100 hover:shadow-card transition-all group">
+          <div class="w-14 h-14 rounded-2xl bg-orange-100 flex items-center justify-center text-brand-accent text-2xl mb-5 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+          </div>
+          <h3 class="text-xl font-bold text-brand-navy mb-2">존중과 신뢰</h3>
+          <p class="text-sm text-brand-textSub leading-relaxed">
+            어르신 한 분 한 분의 삶을 깊이 존중하며, 내 가족을 모시는 진심 어린 정성으로 다가갑니다.
+          </p>
+        </div>
+
+        <div class="bg-brand-beige p-7 rounded-3xl border border-orange-100 hover:shadow-card transition-all group">
+          <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center text-brand-navy text-2xl mb-5 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-user-nurse"></i>
+          </div>
+          <h3 class="text-xl font-bold text-brand-navy mb-2">전문적 돌봄</h3>
+          <p class="text-sm text-brand-textSub leading-relaxed">
+            국가 자격을 취득하고 치매·인성 케어 전문 교육을 이수한 50대 베테랑 요양보호사가 함께합니다.
+          </p>
+        </div>
+
+        <div class="bg-brand-beige p-7 rounded-3xl border border-orange-100 hover:shadow-card transition-all group">
+          <div class="w-14 h-14 rounded-2xl bg-green-100 flex items-center justify-center text-brand-green text-2xl mb-5 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-clipboard-check"></i>
+          </div>
+          <h3 class="text-xl font-bold text-brand-navy mb-2">1:1 맞춤형 케어</h3>
+          <p class="text-sm text-brand-textSub leading-relaxed">
+            건강 상태, 생활 패턴, 식습관, 주거 환경까지 면밀히 분석하여 어르신 맞춤 돌봄 계획을 수립합니다.
+          </p>
+        </div>
+
+        <div class="bg-brand-beige p-7 rounded-3xl border border-orange-100 hover:shadow-card transition-all group">
+          <div class="w-14 h-14 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-700 text-2xl mb-5 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="text-xl font-bold text-brand-navy mb-2">철저한 안전 시스템</h3>
+          <p class="text-sm text-brand-textSub leading-relaxed">
+            마산보건소, 마산의료원, 창원소방본부와 유기적인 비상연락망을 구축하고 사회복지사가 정기 점검합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4-Panel Custom Care Services Section -->
+  <section id="services" class="py-20 bg-brand-peach/40 border-t border-b border-orange-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-brand-accent font-bold text-sm uppercase tracking-wider">OUR CARE SERVICES</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy mt-1">
+          창원종합복지센터 4대 전문 맞춤 서비스
+        </h2>
+        <p class="text-brand-textSub mt-3 text-base">
+          숙련된 50대 베테랑 요양보호사가 어르신의 댁으로 직접 찾아가 편안한 일상을 채워드립니다.
+        </p>
+      </div>
+
+      <!-- Original 4-Panel Storybook Illustration Showcase (images/services-grid.png) -->
+      <div class="bg-white p-4 sm:p-6 rounded-3xl shadow-card border border-orange-100 mb-12 overflow-hidden">
+        <div class="relative rounded-2xl overflow-hidden border border-orange-200">
+          <img 
+            src="images/services-grid.png" 
+            alt="창원종합복지센터 4대 맞춤 케어 서비스 일러스트 (신체활동 지원, 일상생활 지원, 인지 및 정서 지원, 가족요양 & 등급 신청)" 
+            class="w-full h-auto object-cover img-zoom"
+            onerror="this.onerror=null; this.src='https://placehold.co/1200x675/FFF7ED/1A365D?text=4%EB%8C%80+%EB%A7%9E%EC%B6%A4%EB%8F%8C%EB%B4%84+%EC%84%9C%EB%B9%84%EC%8A%A4+%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8';"
+          />
+        </div>
+        <div class="mt-4 pt-3 border-t border-orange-100 text-center flex items-center justify-center gap-2 text-xs text-brand-textSub font-medium">
+          <i class="fa-solid fa-heart text-brand-accent"></i>
+          <span>창원종합복지센터는 어르신의 존엄한 삶과 가족의 행복을 위해 정성을 다합니다.</span>
+        </div>
+      </div>
+
+      <!-- Detailed 4 Service Grid Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-white p-8 rounded-3xl shadow-card border border-orange-100/70 hover:border-brand-accent transition-all flex flex-col sm:flex-row gap-6">
+          <div class="w-14 h-14 shrink-0 rounded-2xl bg-orange-50 text-brand-accent flex items-center justify-center text-2xl font-black">1</div>
+          <div class="space-y-3">
+            <div class="inline-block px-2.5 py-1 rounded bg-orange-100 text-brand-accent text-xs font-bold">1:1 밀착 케어</div>
+            <h3 class="text-xl font-bold text-brand-navy">신체활동 지원</h3>
+            <p class="text-sm font-semibold text-brand-accent">"하루의 시작과 끝을 편안하고 청결하게"</p>
+            <p class="text-sm text-brand-textSub leading-relaxed">
+              어르신의 거동 상태에 맞춰 세면, 목욕 보조, 구강 관리, 옷 갈아입히기, 식사 도움, 체위 변경 및 관절 가동성 유지를 부드럽고 안전하게 돕습니다.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-2">
+              <li><i class="fa-solid fa-check text-brand-green mr-1.5"></i> 세면 및 목욕 보조, 청결 위생 관리</li>
+              <li><i class="fa-solid fa-check text-brand-green mr-1.5"></i> 식사 섭취 보조 및 복약 시간 확인</li>
+              <li><i class="fa-solid fa-check text-brand-green mr-1.5"></i> 침상 체위 변경 및 실내외 휠체어 이동 지원</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white p-8 rounded-3xl shadow-card border border-orange-100/70 hover:border-brand-accent transition-all flex flex-col sm:flex-row gap-6">
+          <div class="w-14 h-14 shrink-0 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl font-black">2</div>
+          <div class="space-y-3">
+            <div class="inline-block px-2.5 py-1 rounded bg-amber-100 text-amber-800 text-xs font-bold">쾌적한 주거환경</div>
+            <h3 class="text-xl font-bold text-brand-navy">일상생활 지원</h3>
+            <p class="text-sm font-semibold text-amber-700">"입맛 돋우는 맞춤 식사와 쾌적한 안식처"</p>
+            <p class="text-sm text-brand-textSub leading-relaxed">
+              어르신의 건강 상태와 치아 저작 상태를 고려한 맞춤 영양 식단 조리, 생활공간 청소, 침구 세탁, 생필품 장보기 등 일상 가사를 세심하게 대행합니다.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-2">
+              <li><i class="fa-solid fa-check text-brand-green mr-1.5"></i> 어르신 소화 및 기호에 맞춘 맞춤 식사 준비</li>
+              <li><i class="fa-solid fa-check text-brand-green mr-1.5"></i> 어르신 전용 생활공간 정돈 및 침구 위생 세탁</li>
+              <li><i class="fa-solid fa-check text-brand-green mr-1.5"></i> 병원 진료 동행 및 생필품 장보기 심부름 지원</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white p-8 rounded-3xl shadow-card border border-orange-100/70 hover:border-brand-accent transition-all flex flex-col sm:flex-row gap-6">
+          <div class="w-14 h-14 shrink-0 rounded-2xl bg-blue-50 text-brand-navy flex items-center justify-center text-2xl font-black">3</div>
+          <div class="space-y-3">
+            <div class="inline-block px-2.5 py-1 rounded bg-blue-100 text-brand-navy text-xs font-bold">마음 활력 증진</div>
+            <h3 class="text-xl font-bold text-brand-navy">인지 및 정서 지원</h3>
+            <p class="text-sm font-semibold text-blue-700">"외로움은 덜고, 마음의 활력은 더합니다"</p>
+            <p class="text-sm text-brand-textSub leading-relaxed">
+              우울감과 고립감을 해소하는 따뜻한 말벗 대화, 회상 활동, 퍼즐 맞추기, 색칠하기 등 뇌 기능을 자극하는 치매 예방 인지 자극 프로그램을 운영합니다.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-2">
+              <li><i class="fa-solid fa-check text-brand-green mr-1.5"></i> 정서적 공감 대화 및 말벗 서비스</li>
+              <li><i class="fa-solid fa-check text-brand-green mr-1.5"></i> 인지 기능 유지 및 치매 예방 교구 활동</li>
+              <li><i class="fa-solid fa-check text-brand-green mr-1.5"></i> 가벼운 산책 동행 및 실내 스트레칭</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-white p-8 rounded-3xl shadow-card border border-orange-100/70 hover:border-brand-accent transition-all flex flex-col sm:flex-row gap-6">
+          <div class="w-14 h-14 shrink-0 rounded-2xl bg-emerald-50 text-brand-green flex items-center justify-center text-2xl font-black">4</div>
+          <div class="space-y-3">
+            <div class="inline-block px-2.5 py-1 rounded bg-emerald-100 text-emerald-800 text-xs font-bold">전문 행정 원스톱</div>
+            <h3 class="text-xl font-bold text-brand-navy">가족요양 & 등급신청 지원</h3>
+            <p class="text-sm font-semibold text-brand-green">"어려운 행정 절차, 처음부터 끝까지 곁에서"</p>
+            <p class="text-sm text-brand-textSub leading-relaxed">
+              가족 중 요양보호사 자격증을 소지하고 부모님을 돌보실 경우 지급되는 가족요양 급여 수급 행정 절차와 노인장기요양 등급 신청을 무료로 대행합니다.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-2">
+              <li><i class="fa-solid fa-check text-brand-green mr-1.5"></i> 건강보험공단 등급 신청 서류 무료 작성 및 접수 대행</li>
+              <li><i class="fa-solid fa-check text-brand-green mr-1.5"></i> 공단 방문조사 시 사전 팁 및 현장 조언</li>
+              <li><i class="fa-solid fa-check text-brand-green mr-1.5"></i> 가족요양 급여 제도 상세 컨설팅 및 급여 정산 관리</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Long-Term Care Cost Calculator -->
+  <section id="calculator" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center space-y-3 mb-12">
+        <span class="text-brand-accent font-bold text-sm tracking-wider uppercase">CALCULATOR</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy">
+          방문요양 예상 본인부담금 모의계산기
+        </h2>
+        <p class="text-brand-textSub text-sm sm:text-base">
+          노인장기요양보험은 <strong>국가에서 85% ~ 100%</strong>를 지원합니다.<br class="hidden sm:inline">
+          어르신의 등급과 이용 일수를 선택하시면 예상되는 월 본인부담금을 확인하실 수 있습니다.
+        </p>
+      </div>
+
+      <!-- Calculator Interactive Card -->
+      <div class="bg-brand-warmCard p-6 sm:p-10 rounded-3xl shadow-card border border-orange-200">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-sm font-bold text-brand-navy mb-2">1. 장기요양 등급 선택</label>
+            <select id="calcGrade" class="w-full bg-white border border-orange-200 rounded-xl p-3.5 text-sm font-medium focus:ring-2 focus:ring-brand-accent focus:outline-none" onchange="calculateCost()">
+              <option value="1">1등급 (최대 월한도 2,069,900원)</option>
+              <option value="2">2등급 (최대 월한도 1,869,600원)</option>
+              <option value="3" selected>3등급 (최대 월한도 1,453,400원)</option>
+              <option value="4">4등급 (최대 월한도 1,341,800원)</option>
+              <option value="5">5등급 (최대 월한도 1,151,300원)</option>
+              <option value="0">아직 등급이 없습니다 (무료 신청 상담)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-brand-navy mb-2">2. 본인부담금 감경 비율 선택</label>
+            <select id="calcRatio" class="w-full bg-white border border-orange-200 rounded-xl p-3.5 text-sm font-medium focus:ring-2 focus:ring-brand-accent focus:outline-none" onchange="calculateCost()">
+              <option value="0.15" selected>일반 수급자 (본인부담 15% / 공단 85% 지원)</option>
+              <option value="0.09">감경 대상자 (본인부담 9% / 공단 91% 지원)</option>
+              <option value="0.06">감경 대상자 (본인부담 6% / 공단 94% 지원)</option>
+              <option value="0.00">국민기초생활수급자 (본인부담 0% / 전액 국비지원)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Slider for Days -->
+        <div class="mt-6">
+          <div class="flex justify-between items-center mb-2">
+            <label class="text-sm font-bold text-brand-navy">
+              3. 월 이용 희망 일수: <span id="daysDisplay" class="text-brand-accent font-extrabold text-lg">20</span>일 (일 3시간 기준)
+            </label>
+            <span class="text-xs text-slate-500">주 5일 이용 시 보통 20~22일</span>
+          </div>
+          <input type="range" id="calcDays" min="10" max="25" value="20" class="w-full h-2.5 bg-orange-200 rounded-lg appearance-none cursor-pointer accent-brand-accent" oninput="updateDaysDisplay(this.value); calculateCost();">
+        </div>
+
+        <!-- Result Display -->
+        <div class="mt-8 pt-6 border-t border-orange-300/60 grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
+          <div>
+            <span class="text-xs text-slate-600 block">월 총 급여비용 (공단부담금 포함)</span>
+            <span id="totalCostDisplay" class="text-lg font-bold text-slate-700">약 1,120,000원</span>
+          </div>
+          <div class="bg-white p-4 rounded-2xl border border-orange-300 text-right sm:text-right shadow-sm">
+            <span class="text-xs font-semibold text-brand-accent block">예상 실제 월 본인부담금</span>
+            <span id="selfPayDisplay" class="text-2xl sm:text-3xl font-black text-brand-navy">약 168,000원</span>
+          </div>
+        </div>
+
+        <p class="text-[11px] text-slate-500 mt-4 leading-normal">
+          * 위 계산 결과는 일 180분(3시간) 방문요양 표준급여 기준의 모의 계산이며, 공휴일/야간 할증 및 실제 등급별 월 한도액 잔여금에 따라 약간의 차이가 발생할 수 있습니다.
+        </p>
+
+        <div class="mt-6 text-center">
+          <button onclick="openConsultModal()" class="w-full sm:w-auto px-8 py-3.5 bg-brand-navy hover:bg-brand-navyHover text-white font-bold rounded-xl text-sm transition-all inline-flex items-center justify-center gap-2 shadow-md">
+            <i class="fa-solid fa-calculator"></i>
+            <span>정확한 맞춤 견적 및 무료 상담 신청하기</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5-Step Process Guide -->
+  <section id="process" class="py-20 bg-brand-peach/30 border-t border-orange-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-accent font-bold text-sm uppercase tracking-wider">PROCESS GUIDE</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy mt-1">
+          복잡한 노인장기요양 등급 신청,<br>창원종합복지센터가 처음부터 동행합니다
+        </h2>
+        <p class="text-brand-textSub mt-3 text-base">
+          거동이 불편하신 65세 이상 어르신 또는 치매·뇌혈관 등 노인성 질환을 앓고 계신 분이라면 누구나 신청 가능합니다.
+        </p>
+      </div>
+
+      <!-- 5 Step Grid Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+        <div class="bg-white p-6 rounded-2xl border border-orange-200 shadow-sm relative text-center">
+          <div class="w-10 h-10 mx-auto rounded-full bg-orange-100 text-brand-accent font-black flex items-center justify-center text-sm mb-4">01</div>
+          <h3 class="font-bold text-brand-navy text-base mb-2">상담 및 진단</h3>
+          <p class="text-xs text-brand-textSub leading-relaxed">전화 또는 방문 시 전담 사회복지사가 어르신 상태를 1차 무료 확인합니다.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-orange-200 shadow-sm relative text-center">
+          <div class="w-10 h-10 mx-auto rounded-full bg-orange-100 text-brand-accent font-black flex items-center justify-center text-sm mb-4">02</div>
+          <h3 class="font-bold text-brand-navy text-base mb-2">신청서 무료 대행</h3>
+          <p class="text-xs text-brand-textSub leading-relaxed">건강보험공단 지사에 필요한 모든 서류 작성을 센터에서 무료 대행합니다.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-orange-200 shadow-sm relative text-center">
+          <div class="w-10 h-10 mx-auto rounded-full bg-orange-100 text-brand-accent font-black flex items-center justify-center text-sm mb-4">03</div>
+          <h3 class="font-bold text-brand-navy text-base mb-2">공단 현장방문 동행</h3>
+          <p class="text-xs text-brand-textSub leading-relaxed">공단 직원의 가정 방문 조사 시 함께하여 어르신 상태를 세심하게 전달합니다.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-orange-200 shadow-sm relative text-center">
+          <div class="w-10 h-10 mx-auto rounded-full bg-orange-100 text-brand-accent font-black flex items-center justify-center text-sm mb-4">04</div>
+          <h3 class="font-bold text-brand-navy text-base mb-2">등급 판정 및 플랜</h3>
+          <p class="text-xs text-brand-textSub leading-relaxed">1~5등급 및 인지등급 판정 후 최적의 1:1 맞춤 급여 계획을 수립합니다.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border-2 border-brand-accent shadow-sm relative text-center bg-orange-50/50">
+          <div class="w-10 h-10 mx-auto rounded-full bg-brand-accent text-white font-black flex items-center justify-center text-sm mb-4">05</div>
+          <h3 class="font-bold text-brand-accent text-base mb-2">전문 요양보호사 매칭</h3>
+          <p class="text-xs text-brand-textSub leading-relaxed">성향과 건강에 꼭 맞는 전문 요양보호사 파견 및 정기 모니터링을 진행합니다.</p>
+        </div>
+      </div>
+
+      <div class="mt-10 p-6 bg-white rounded-2xl border border-orange-200 flex flex-col sm:flex-row items-center justify-between gap-4 max-w-4xl mx-auto shadow-sm">
+        <div class="flex items-center gap-4 text-center sm:text-left">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 text-brand-green flex items-center justify-center text-xl shrink-0">
+            <i class="fa-solid fa-file-shield"></i>
+          </div>
+          <div>
+            <p class="text-base font-bold text-brand-navy">장기요양 인정신청, 혼자 고민하지 마세요!</p>
+            <p class="text-xs text-slate-500">의사소견서 발급 안내부터 공단 조사 팁까지 15년 노하우로 꼼꼼히 챙겨드립니다.</p>
+          </div>
+        </div>
+        <button onclick="openConsultModal()" class="shrink-0 px-6 py-3 bg-brand-accent hover:bg-brand-accentHover text-white font-bold text-sm rounded-xl transition-all shadow-md">
+          신청 대행 바로 문의
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section id="faq" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center space-y-3 mb-14">
+        <span class="text-brand-accent font-bold text-sm tracking-wider uppercase">FAQ</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy">
+          자주 묻는 질문
+        </h2>
+        <p class="text-brand-textSub text-sm sm:text-base">
+          방문요양 및 가족요양 이용 전 가장 궁금해하시는 점들을 모았습니다.
+        </p>
+      </div>
+
+      <div class="space-y-4" id="faqList">
+        <div class="border border-orange-100 rounded-2xl overflow-hidden shadow-sm">
+          <button class="w-full p-5 text-left bg-brand-beige hover:bg-orange-50/70 font-bold text-brand-navy flex justify-between items-center transition-colors" onclick="toggleFaq(1)">
+            <span class="flex items-center gap-3">
+              <span class="text-brand-accent font-black">Q1.</span>
+              <span>노인장기요양보험 등급은 누가 신청할 수 있나요?</span>
+            </span>
+            <i id="faqIcon-1" class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faqAnswer-1" class="p-5 text-sm text-brand-textSub bg-white border-t border-orange-100 leading-relaxed hidden">
+            <strong>만 65세 이상 어르신</strong>으로 거동이 불편하시거나, <strong>만 65세 미만이더라도 치매, 뇌혈관 질환, 파킨슨 등 노인성 질환</strong>으로 일상생활을 혼자 수행하기 어려운 분이라면 누구나 신청하실 수 있습니다. 창원종합복지센터로 연락 주시면 무료로 자격 요건을 먼저 확인해 드립니다.
+          </div>
+        </div>
+
+        <div class="border border-orange-100 rounded-2xl overflow-hidden shadow-sm">
+          <button class="w-full p-5 text-left bg-brand-beige hover:bg-orange-50/70 font-bold text-brand-navy flex justify-between items-center transition-colors" onclick="toggleFaq(2)">
+            <span class="flex items-center gap-3">
+              <span class="text-brand-accent font-black">Q2.</span>
+              <span>가족요양이란 무엇이고 어떻게 지원받나요?</span>
+            </span>
+            <i id="faqIcon-2" class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faqAnswer-2" class="p-5 text-sm text-brand-textSub bg-white border-t border-orange-100 leading-relaxed hidden">
+            요양보호사 자격증을 소지한 가족(배우자, 직계혈족, 형제자매 등)이 장기요양 등급을 받으신 부모님이나 배우자를 직접 돌볼 때, 국가에서 <strong>가족요양 급여(돌봄 비용)</strong>를 매월 지급하는 제도입니다. 창원종합복지센터에 등록하시면 필요한 행정 절차와 매월 급여 정산을 신속하게 도와드립니다.
+          </div>
+        </div>
+
+        <div class="border border-orange-100 rounded-2xl overflow-hidden shadow-sm">
+          <button class="w-full p-5 text-left bg-brand-beige hover:bg-orange-50/70 font-bold text-brand-navy flex justify-between items-center transition-colors" onclick="toggleFaq(3)">
+            <span class="flex items-center gap-3">
+              <span class="text-brand-accent font-black">Q3.</span>
+              <span>방문요양 서비스는 하루에 몇 시간 이용할 수 있나요?</span>
+            </span>
+            <i id="faqIcon-3" class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faqAnswer-3" class="p-5 text-sm text-brand-textSub bg-white border-t border-orange-100 leading-relaxed hidden">
+            보통 <strong>하루 3시간(180분)</strong>을 가장 많이 이용하시며, 등급과 필요에 따라 하루 2시간에서 최대 4시간까지 조율 가능합니다. 1~2등급 어르신의 경우 상태에 따라 탄력적으로 설계해 드립니다.
+          </div>
+        </div>
+
+        <div class="border border-orange-100 rounded-2xl overflow-hidden shadow-sm">
+          <button class="w-full p-5 text-left bg-brand-beige hover:bg-orange-50/70 font-bold text-brand-navy flex justify-between items-center transition-colors" onclick="toggleFaq(4)">
+            <span class="flex items-center gap-3">
+              <span class="text-brand-accent font-black">Q4.</span>
+              <span>마산, 창원 전 지역 서비스가 가능한가요?</span>
+            </span>
+            <i id="faqIcon-4" class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faqAnswer-4" class="p-5 text-sm text-brand-textSub bg-white border-t border-orange-100 leading-relaxed hidden">
+            네, 가능합니다. 마산회원구, 마산합포구, 의창구, 성산구, 진해구 등 <strong>창원특례시 전역</strong>에 거주하시는 어르신 댁으로 인근의 우수한 전담 요양보호사 선생님을 엄선하여 배정해 드립니다.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Contact Form Section -->
+  <section id="contact" class="py-20 bg-brand-peach/30 border-t border-orange-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-brand-accent font-bold text-sm tracking-wider uppercase">LOCATION & CONTACT</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy">
+          오시는 길 및 상담 안내
+        </h2>
+        <p class="text-brand-textSub text-sm sm:text-base mt-2">
+          편안한 마음으로 언제든 방문해 주시거나 전화 주시면 친절하게 안내해 드리겠습니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Contact Details Card -->
+        <div class="lg:col-span-5 bg-white p-8 rounded-3xl shadow-card border border-orange-100 space-y-6">
+          <div class="border-b border-orange-100 pb-5">
+            <h3 class="text-2xl font-bold text-brand-navy">창원종합복지센터</h3>
+            <p class="text-xs text-brand-accent font-bold mt-1">국민건강보험공단 지정 장기요양기관</p>
+          </div>
+
+          <div class="space-y-4 text-sm text-slate-600">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-orange-100 text-brand-accent flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-navy">소재지</p>
+                <p class="mt-0.5 font-medium">경남 창원시 마산회원구 회성남18길 28, 1층 101호</p>
+                <p class="text-xs text-slate-400 mt-0.5">(회성동 주민센터 인근 / 1층 전용 주차 가능)</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-orange-100 text-brand-accent flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-navy">대표 전화 (365일 상담)</p>
+                <a href="tel:0552994305" class="text-lg font-extrabold text-brand-accent hover:underline">055-299-4305</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-orange-100 text-brand-accent flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-solid fa-fax"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-navy">팩스 및 이메일</p>
+                <p class="mt-0.5">Fax: 055-251-4305</p>
+                <p class="mt-0.5">E-mail: masancare@naver.com</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-orange-100 text-brand-accent flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-navy">운영 시간</p>
+                <p class="mt-0.5">평일 09:00 ~ 18:00 (방문요양은 365일 상시 제공)</p>
+                <p class="text-xs text-slate-400 mt-0.5">* 주말 및 공휴일 전화 상담 상시 가능</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Maps Quick Action Buttons -->
+          <div class="pt-4 border-t border-orange-100 flex gap-3">
+            <a href="https://map.kakao.com/link/search/창원시 마산회원구 회성남18길 28" target="_blank" class="flex-1 text-center py-3 bg-yellow-400 hover:bg-yellow-500 text-slate-900 font-bold rounded-xl text-xs flex items-center justify-center gap-1.5 transition-colors">
+              <i class="fa-solid fa-map-location-dot"></i> 카카오맵 길찾기
+            </a>
+            <a href="https://map.naver.com/v5/search/창원시 마산회원구 회성남18길 28" target="_blank" class="flex-1 text-center py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl text-xs flex items-center justify-center gap-1.5 transition-colors">
+              <i class="fa-solid fa-location-arrow"></i> 네이버 지도보기
+            </a>
+          </div>
+        </div>
+
+        <!-- Online Application Form -->
+        <div class="lg:col-span-7 bg-white p-8 rounded-3xl shadow-card border border-orange-100">
+          <div class="mb-6">
+            <span class="inline-block px-3 py-1 rounded-full bg-orange-100 text-brand-accent text-xs font-bold mb-2">간편 신청 접수</span>
+            <h3 class="text-2xl font-bold text-brand-navy">어르신 돌봄 무료 상담 신청</h3>
+            <p class="text-xs sm:text-sm text-slate-500 mt-1">
+              연락처와 문의 내용을 남겨주시면, 전문 사회복지사가 친절하게 전화드립니다.
+            </p>
+          </div>
+
+          <form id="onlineConsultForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-brand-navy mb-1.5">신청자 성함 (보호자 또는 어르신) *</label>
+                <input type="text" id="formName" required placeholder="예: 홍길동" class="w-full p-3 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-accent">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-brand-navy mb-1.5">연락처 *</label>
+                <input type="tel" id="formPhone" required placeholder="예: 010-1234-5678" class="w-full p-3 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-accent">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-brand-navy mb-1.5">거주 지역 (동/구)</label>
+                <input type="text" id="formArea" placeholder="예: 마산회원구 회성동" class="w-full p-3 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-accent">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-brand-navy mb-1.5">희망 서비스</label>
+                <select id="formService" class="w-full p-3 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-accent font-medium">
+                  <option value="방문요양 서비스">방문요양 서비스 (전문 요양보호사 파견)</option>
+                  <option value="장기요양 등급신청 대행">장기요양 등급 신청 무료 대행</option>
+                  <option value="가족요양 급여 상담">가족요양 급여 제도 상담</option>
+                  <option value="기타 복지상담">기타 어르신 돌봄 및 복지 상담</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-brand-navy mb-1.5">어르신 건강 상태 및 문의 내용</label>
+              <textarea id="formMessage" rows="3" placeholder="예: 부모님 연세가 82세이시고 최근 거동이 불편해지셨습니다. 등급 신청부터 방문요양까지 안내 부탁드립니다." class="w-full p-3 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-accent"></textarea>
+            </div>
+
+            <div class="flex items-center gap-2 pt-1">
+              <input type="checkbox" id="privacyAgree" required class="w-4 h-4 rounded text-brand-accent focus:ring-brand-accent">
+              <label for="privacyAgree" class="text-xs text-slate-500 cursor-pointer">
+                개인정보 수집 및 상담 연락 목적 이용에 동의합니다.
+              </label>
+            </div>
+
+            <button type="submit" class="w-full py-4 bg-brand-accent hover:bg-brand-accentHover text-white font-bold rounded-xl shadow-md hover:shadow-elevated transition-all flex items-center justify-center gap-2 text-base">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span>상담 신청서 제출하기</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Support Strip -->
+  <section class="bg-slate-100 py-6 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-xs text-slate-500">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <span class="font-bold text-brand-navy"><i class="fa-solid fa-kit-medical text-red-500 mr-1"></i> 지역사회 비상 안전 협력망:</span>
+          <span>창원소방본부(055-548-9235)</span> • 
+          <span>마산보건소(055-225-5931)</span> • 
+          <span>마산의료원(055-249-1119)</span> • 
+          <span>마산회원구청(055-230-4312)</span>
+        </div>
+        <div class="text-right">
+          <span>어르신의 응급 상황 시 24시간 안전 관리 매뉴얼을 가동합니다.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-navy text-white pt-14 pb-24 md:pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-10">
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl font-black tracking-wider text-amber-300">창원종합복지센터</span>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed pr-4">
+            어르신의 존엄한 오늘과 가족의 행복한 내일을 만듭니다.<br>
+            2011년부터 15년간 창원·마산 지역 어르신의 곁을 지켜온 국민건강보험공단 지정 최우수 노인장기요양기관입니다.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <span class="px-2.5 py-1 rounded bg-slate-800 text-[11px] text-amber-200 border border-slate-700 font-medium">공단평가 A등급</span>
+            <span class="px-2.5 py-1 rounded bg-slate-800 text-[11px] text-emerald-200 border border-slate-700 font-medium">사회복지사 전담제</span>
+            <span class="px-2.5 py-1 rounded bg-slate-800 text-[11px] text-blue-200 border border-slate-700 font-medium">배상책임보험 가입</span>
+          </div>
+        </div>
+
+        <div class="md:col-span-4 space-y-2 text-xs text-slate-300">
+          <h4 class="text-sm font-bold text-white mb-3">기관 정보</h4>
+          <p><span class="text-slate-400">기관명:</span> 창원종합복지센터</p>
+          <p><span class="text-slate-400">주소:</span> 경상남도 창원시 마산회원구 회성남18길 28, 1층 101호</p>
+          <p><span class="text-slate-400">대표전화:</span> 055-299-4305 | <span class="text-slate-400">팩스:</span> 055-251-4305</p>
+          <p><span class="text-slate-400">이메일:</span> masancare@naver.com</p>
+        </div>
+
+        <div class="md:col-span-3 space-y-2 text-xs text-slate-300">
+          <h4 class="text-sm font-bold text-white mb-3">바로가기</h4>
+          <ul class="space-y-1.5 font-medium">
+            <li><a href="#about" class="hover:text-amber-300 transition-colors">센터 소개 및 비전</a></li>
+            <li><a href="#services" class="hover:text-amber-300 transition-colors">방문요양 & 가족요양 안내</a></li>
+            <li><a href="#calculator" class="hover:text-amber-300 transition-colors">본인부담금 모의계산</a></li>
+            <li><a href="#process" class="hover:text-amber-300 transition-colors">노인장기요양 등급신청 가이드</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-slate-800/80 text-center text-xs text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <p>&copy; 2011-2026 창원종합복지센터. All Rights Reserved.</p>
+        <p class="text-[11px] text-slate-500">본 사이트에 게시된 콘텐츠 및 디자인의 무단 전재를 금합니다.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fixed Mobile Bottom Floating CTA Bar -->
+  <div class="fixed bottom-0 left-0 right-0 z-30 bg-white/95 backdrop-blur-md border-t border-orange-200 p-3 sm:hidden shadow-2xl flex items-center gap-2">
+    <a href="tel:0552994305" class="flex-1 py-3 bg-brand-navy text-white font-bold rounded-xl text-center text-sm flex items-center justify-center gap-2">
+      <i class="fa-solid fa-phone"></i> 전화상담
+    </a>
+    <button onclick="openConsultModal()" class="flex-1 py-3 bg-brand-accent text-white font-bold rounded-xl text-center text-sm flex items-center justify-center gap-2">
+      <i class="fa-solid fa-calendar-check"></i> 간편상담
+    </button>
+  </div>
+
+  <!-- Floating Desktop CTA Button -->
+  <div class="hidden sm:block fixed bottom-8 right-8 z-30">
+    <button onclick="openConsultModal()" class="group flex items-center gap-3 bg-brand-accent hover:bg-brand-accentHover text-white px-6 py-4 rounded-full shadow-elevated transition-all transform hover:scale-105">
+      <span class="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></span>
+      <span class="font-bold text-sm">365일 무료 등급상담 신청</span>
+      <i class="fa-solid fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"></i>
+    </button>
+  </div>
+
+  <!-- Consultation Modal Dialog -->
+  <div id="consultModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white max-w-lg w-full rounded-3xl p-6 sm:p-8 shadow-2xl border border-orange-200 relative transform transition-all">
+      <button onclick="closeConsultModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-600 p-2" aria-label="닫기">
+        <i class="fa-solid fa-xmark text-xl"></i>
+      </button>
+
+      <div class="text-center mb-6">
+        <div class="w-14 h-14 mx-auto rounded-full bg-orange-100 text-brand-accent flex items-center justify-center text-2xl mb-3">
+          <i class="fa-solid fa-phone-volume"></i>
+        </div>
+        <h3 class="text-2xl font-extrabold text-brand-navy">방문요양 무료 상담 예약</h3>
+        <p class="text-xs text-slate-500 mt-1">
+          15년 노하우의 창원종합복지센터 전담 사회복지사가 친절히 상담해 드립니다.
+        </p>
+      </div>
+
+      <form onsubmit="handleModalSubmit(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-brand-navy mb-1">성함 *</label>
+          <input type="text" id="modalName" required placeholder="성함을 입력해주세요" class="w-full p-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-brand-navy mb-1">연락처 *</label>
+          <input type="tel" id="modalPhone" required placeholder="010-0000-0000" class="w-full p-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-brand-navy mb-1">문의 분야</label>
+          <select id="modalService" class="w-full p-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent">
+            <option>방문요양 서비스 이용 문의</option>
+            <option>노인장기요양 등급 신청 무료 대행</option>
+            <option>가족요양 급여 수급 상담</option>
+            <option>기타 어르신 케어 상담</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-brand-navy mb-1">상담 희망 시간대</label>
+          <select class="w-full p-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent">
+            <option>언제든 통화 가능</option>
+            <option>오전 중 (09:00 ~ 12:00)</option>
+            <option>오후 중 (13:00 ~ 18:00)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full py-4 bg-brand-accent hover:bg-brand-accentHover text-white font-bold rounded-xl text-base transition-all shadow-md mt-2">
+          신청 완료하기
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Message Box -->
+  <div id="toastNotification" class="fixed top-6 right-6 z-50 bg-brand-navy text-white px-6 py-4 rounded-2xl shadow-2xl border-l-4 border-brand-accent transform translate-y-[-150%] transition-transform duration-300 flex items-center gap-3">
+    <div class="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center shrink-0">
+      <i class="fa-solid fa-check"></i>
+    </div>
+    <div>
+      <p class="font-bold text-sm" id="toastTitle">상담 신청이 접수되었습니다</p>
+      <p class="text-xs text-slate-300" id="toastMsg">전담 사회복지사가 빠른 시간 내에 연락드리겠습니다.</p>
+    </div>
+  </div>
+
+  <script>
+    // Mobile navigation toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+    document.getElementById('mobileMenuBtn').addEventListener('click', toggleMobileMenu);
+
+    // Modal controls
+    function openConsultModal() {
+      const modal = document.getElementById('consultModal');
+      modal.classList.add('modal-active');
+    }
+    function closeConsultModal() {
+      const modal = document.getElementById('consultModal');
+      modal.classList.remove('modal-active');
+    }
+
+    window.addEventListener('click', function(e) {
+      const modal = document.getElementById('consultModal');
+      if (e.target === modal) {
+        closeConsultModal();
+      }
+    });
+
+    // Toast alert utility (Replacing alert())
+    function showToast(title, message) {
+      const toast = document.getElementById('toastNotification');
+      document.getElementById('toastTitle').textContent = title;
+      document.getElementById('toastMsg').textContent = message;
+      
+      toast.classList.remove('translate-y-[-150%]');
+      toast.classList.add('translate-y-0');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0');
+        toast.classList.add('translate-y-[-150%]');
+      }, 4000);
+    }
+
+    // Form submission handlers
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('formName').value;
+      const phone = document.getElementById('formPhone').value;
+      const service = document.getElementById('formService').value;
+
+      showToast(`${name} 님의 상담 신청 접수 완료`, `${phone} 번호로 ${service} 관련 안내를 드릴 예정입니다.`);
+      document.getElementById('onlineConsultForm').reset();
+    }
+
+    function handleModalSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('modalName').value;
+      closeConsultModal();
+      showToast(`${name} 님의 상담 예약 완료`, `창원종합복지센터 전담 사회복지사가 신속히 연락드리겠습니다.`);
+    }
+
+    // FAQ toggle function
+    function toggleFaq(index) {
+      const answer = document.getElementById(`faqAnswer-${index}`);
+      const icon = document.getElementById(`faqIcon-${index}`);
+
+      if (answer.classList.contains('hidden')) {
+        answer.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        answer.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+
+    // Long-Term Care Cost Estimation Logic (2026 Daily 180min 기준: 56,000원)
+    const DAILY_RATE_3HR = 56000;
+
+    function updateDaysDisplay(val) {
+      document.getElementById('daysDisplay').textContent = val;
+    }
+
+    function calculateCost() {
+      const grade = parseInt(document.getElementById('calcGrade').value);
+      const ratio = parseFloat(document.getElementById('calcRatio').value);
+      const days = parseInt(document.getElementById('calcDays').value);
+
+      if (grade === 0) {
+        document.getElementById('totalCostDisplay').textContent = '등급 신청 전 (무료 상담)';
+        document.getElementById('selfPayDisplay').textContent = '상담 후 산정';
+        return;
+      }
+
+      const monthlyTotal = DAILY_RATE_3HR * days;
+      const selfPayment = Math.round(monthlyTotal * ratio);
+
+      document.getElementById('totalCostDisplay').textContent = '약 ' + monthlyTotal.toLocaleString() + '원';
+      document.getElementById('selfPayDisplay').textContent = '약 ' + selfPayment.toLocaleString() + '원';
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      calculateCost();
+    });
+  </script>
+</body>
+</html>
